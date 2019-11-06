@@ -10,6 +10,21 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
+                                    <String>garage/garage.ditamap</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>Garage</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>DITAMAP</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
                                     <String>garage-copy/garage.ditamap</String>
                                 </field>
                                 <field name="scenarioIds">
@@ -39,7 +54,7 @@
                                     <String>${cfd}</String>
                                 </field>
                                 <field name="outputDir">
-                                    <String>D:\xampp\htdocs\feedback\garage</String>
+                                    <String>/var/www/feedback/garage</String>
                                 </field>
                                 <field name="tempDir">
                                     <String>${cfd}/temp/webhelp-responsive</String>
@@ -81,10 +96,10 @@
                                 <field name="publishingTemplateDataPO">
                                     <publishingTemplate>
                                         <field name="templateRoot">
-                                            <String>D:/workspace/feedback-demo/garage-copy/publishing/mechano/</String>
+                                            <String>/home/radu/workspace/feedback-demo.git/garage/publishing/mechano/</String>
                                         </field>
                                         <field name="descriptorRelativePath">
-                                            <String>Mechano tree.opt</String>
+                                            <String>mechano-tiles.opt</String>
                                         </field>
                                         <field name="isCustomTemplate">
                                             <Boolean>true</Boolean>
