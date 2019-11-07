@@ -1,0 +1,401 @@
+Today, I will show you how to improve online documentation content by getting feedback from your website audience.
+
+To demonstrate this, we’ll use a simple documentation sample written in DITA and two applications that are tightly interconnected:
+Oxygen XML Editor to edit documentation sources and to publish it 
+and Oxygen Feedback to get feedback from our community.
+
+2. What is Oxygen Editor
+
+A few words about Oxygen XML Editor.
+
+Oxygen XML Editor is the complete XML editing solution, both for XML developers and content authors. 
+It includes built-in support for all the popular publishing frameworks.
+
+It has been in development for more than 20 years, so it has has a lot of powerful features.
+
+Today, I will show you a small set of features related to DITA authoring and publishing.
+
+2. What is Oxygen Feedback
+
+It is a modern comment management platform that provides a simple and efficient way for your community to interact and offer feedback.
+
+ it is very easy to configure and integrate.
+
+You can moderate new comments, that means new comments should be approved or rejected by a moderator until they become visible to your community.
+
+Another powerful feature is to associate a version with community comments and choose if comments from previous versions are visible in newer versions.
+
+This strategy is useful when publishing technical documentation for a product that has multiple versions in production.
+
+3. Agenda:
+Presentation agenda is:
+1. First, we’ll see how to generate online documentation using Oxygen XML Editor tool
+2. Then, I will embed Oxygen Feedback commenting system in the online documentation
+
+3. Next, we’ll use feedback commenting system to add some comments and replies.
+
+4. After that, we’ll use the Feedback Admin application to manage community comments and users (we’ll moderate some posts, search for comments by using different search criteria)
+
+5. Next, we’ll use Oxygen XML editor to update the documentation source content analyzing community feedback.
+
+6. And, to conclude our presentation, we’ll regenerate online documentation after addressing community feedback.
+
+4. Generate Online documentation
+-----
+First, we’ll see how to use Oxygen XML Editor to generate online documentation for a DITA documentation project.
+
+5. Generate with Oxygen
+------------
+
+Let's switch to the application and quickly explore the DITA sample project that I will use in my presentation.
+
+It’s a sample project for managing or administrating a garage. It contains topics explaining how to maintain a car like: 
+changing the oil or washing the car.
+
+Let's open a topic to see how it looks. Oxygen XML Editor has a very good support for editing DITA files in a visual manner. 
+We'll use the editing part when we'll integrate user's feedback.
+
+To generate online documentation for this sample project, I will open the transformation scenario 
+dialog and select the pre-configured “Garage” transformation scenario and click transform.
+
+While transforming, let me give you more information about the DITA framework:
+
+DITA is an XML-based open standard for structuring, managing, and publishing content. 
+It has a very good adoption rate in the technical documentation world.
+
+I see that the transformation is ready and we can quickly explore it to see how it looks…
+
+The main page presents a Table of Contents with topics from first two levels.
+In the upper part we have the publication logo and menu. We can open any of the topics, for instance let's open the Changing the oil topic.
+
+6. Install Oxygen Feedback
+----------
+We saw how to use Oxygen XML Editor to generate online documentation for a DITA project. 
+
+Now, let’s see how easy is to install Oxygen Feedback commenting system in online documentation.
+
+7. Install Oxygen Feedback
+----------
+Oxygen Feedback was designed to be very easy to install. Basically, this can be done in 3 steps:
+
+1. Login to the Oxygen Feedback platform
+
+2. Create a site configuration, mainly it specifies the URL where your documentation is hosted. At the end of this step you will get installation instructions
+
+3. Follow the installation instructions and regenerate documentation
+
+8. Login
+----------
+[This step is in browser]
+Now, let’s see the installation process. 
+
+In a browser, open the feedback.oxygenxml.com. This is the main page for Oxygen feedback platform.
+
+If this is your first time using Oxygen Feedback, you need to sign up for a Feedback account from the Log In page. 
+
+To do this, you can click on Log in with Google or Log in with Facebook to create an account using your Google or Facebook credentials, or click the Sign Up tab to create an account using your name and email address.
+
+In my case, I will login using my Google account
+
+9. Sites page
+-------------
+When you log in to the administration interface, you start with the Sites page. 
+
+This is where you can add site configurations and manage existing ones. 
+
+Each site configuration is displayed as a tile. Each tile displays the logo, name, and description for the particular site configuration. 
+
+10. Create a site
+-------
+To create a new site configuration, click the Add site button. 
+
+This will initiate a three-step wizard.
+
+The first page of the site creation wizard is the Settings page. This page includes the following options:
+Name - The name of the site configuration. In my case I will type “Garage”
+The site configuration name is unique per user. Each user cannot have more than one site configuration with the same name.
+
+To add a Logo click anywhere in the circle that contains the camera icon. Browse for an image to use for the logo.
+
+Description
+The description for my sample project is:
+A documentation project with useful topics regarding car maintenance.
+
+Regarding comments Moderation we have two options:
+All - Select this option if you want all comments to require approval by an Owner, Admin, or Moderator before they are posted for all users to see. 
+When you use this option, each Owner, Admin, and Moderator for the site configuration will receive an email when a 
+user adds a comment notifying them that there is a comment waiting for approval. 
+This is the option I will use for my presentation.
+None - Select this option if you want all comments to be automatically approved and posted for all users to see. 
+The last option is: Allow Anonymous Users
+Select this option if you want to allow comments to be posted anonymously without requiring the user to log in.
+
+11. Initial version
+-----------
+The second page of the site creation wizard is the Initial Version page.
+ 
+This wizard page includes the following options:
+Initial Version
+Each site configuration can have multiple versions. This is useful if you plan 
+to have multiple versions of the output (for example when publishing technical documentation for a product 
+that has multiple versions in production). This Initial Version option specifies the starting version. 
+In most cases (especially if you do not plan to have multiple versions), you can leave the initial version as 1.0 as I will do.
+
+Site Base URL(s) 
+Use this option to specify the Base URL for your website (you can add additional URLs by clicking the Add button). This option is very important because comments component will only appear on pages within the hierarchy of this base URL.
+
+In our case we'll specify the URL where we publish our documentation.
+
+12. Install page
+---------
+The third page of the site creation wizard is the Installation page.
+
+There are three options:
+Oxygen XML Editor
+Choose this option if you are adding the Feedback system to WebHelp Responsive documentation using Oxygen XML Editor/Author.
+
+Oxygen XML WebHelp
+This option is for adding the Feedback system to WebHelp Responsive documentation using a command-line script.
+
+Any Platform
+This option is for adding the Feedback system to any website (for example, blog site).
+
+In our case, I will use the first option to install it in WebHelp Responsive documentation using Oxygen.
+
+I will put a browser window and Oxygen side by side to make it easy to follow the installation instructions.
+
+Open the transformation scenario dialog, edit the scenario used to generate documentation. In the Feedback tab, paste the installation fragment. Save and regenerate the documentation.
+
+While the documentation is generated, I will switch to the Feedback platform to finish the site creation procedure.
+
+The newly created site configuration will be displayed as a tile in Sites page. Notice that the site’s logo, name and description are displayed on tile.
+
+13. Explore documentation
+---------
+The documentation was generated, let’s see how looks.
+
+We can see that Oxygen Feedback Comments application was installed in the bottom part of the page. 
+
+14. Card add comments with feedback
+-------
+We saw how to install Oxygen Feedback in online documentation
+
+Now, let’s see how easy is to use the Oxygen Feedback commenting system from the perspective of a community member.
+
+15. Add some comments with Oxygen
+--------------
+Now I’ll go back to the online documentation and add some comments. 
+
+In this case, I will login to the platform using a simple member account.
+
+Let’s open the ‘Changing the oil in your car’ topic. This topic explains how to drain the 
+oil but does not say anything about how to recycle it.
+
+We know that car’s oil is extremely pollutant so it is highly advisable to recycle it. 
+So, I want to give this feedback to the documentation administrator by adding a comment.
+
+To add a comment click anywhere in the text box where you see Add a comment.
+
+I will write: Oil is extremely pollutant so it is highly advisable to recycle it.
+
+We can use the various toolbar actions to style your text. 
+You can also type Markdown syntax in the comment box to style your text. 
+
+Let’s emphasis the extremely pollutant.
+
+You can see the results of the styling in the Preview section.
+Click Add or Ctrl+Enter to post the comment.
+
+You can see the state of the added comment is Waiting for approval. 
+
+This means that the newly added comment is not visible for other users until it is approved by an Administrator or Moderator.
+
+Let’s try to add one more comment. We can see that this page contains a related link to the “windshield washer fluid” concept. 
+
+We want to ask the site admin to add another related link to the Oil concept. So, I will type:
+
+I see that there is a related link to the “windshield washer fluid”.
+Perhaps, there should also be a link to the Oil concept.
+
+I want to add a link to the Oil concept to help site admin to easy identify it. So I copy the topic address 
+from browser and select the Oil word and click the Hiperlink action. Paste the topic addreess and save. A link to the topic was added.
+
+We can add more comments in the same manner, but I think it is enough to demonstrate how simple is for your community to post new comments.
+
+
+16. Moderate comments card
+------------
+Next, we’ll see how to manage community comments and users.
+
+To speed up my presentation, I will use another Feedback account where I have configured the Garage site with some comments already added.
+
+17. Site community
+---------
+So, I’ll open the Oxygen Feedback main page and login using a Facebook account this time.
+
+When you log in to the administration interface, again you start with the Sites page.
+
+We already saw that each site configuration is displayed as a tile.
+
+In my case, I want to administrate the Garage site. So, I’ll click the Garage tile.
+
+First, we’ll go to the Community page. This page is where you can see all members/users that make up the site community. 
+
+It displays members of the site management team (Owner, Admin, or Moderator) and any other user who has posted a comment on the website where the Feedback system is installed for the particular site configuration.
+
+To filter the list or search for a particular user, start typing a name in the text field at the top of the page. Let’s search for John. We see that only users named john are displayed.
+
+You can also filter the list by user role. For instance we can display all users with Member role.
+
+This page is accessible to users with a role of Owner or Admin.
+
+18. Site user roles
+--------------
+The possible user roles are:
+
+Banned - This type of user cannot post comments.
+
+Member - This type of user has rights to post new comments. If the site is moderated, like it is in our case, comments posted by this type of user require approval by a user with a role of Owner, Admin, or Moderator.
+
+Trusted - Comments posted by this type of user are automatically approved.
+
+Moderator - This type of user has rights to moderate comment posts (edit, approve, reject, or delete).
+
+Admin - This type of user has the same rights as a moderator but also rights to configure site settings, versions, team members, and user roles.
+
+Owner (This role is automatically assigned when the site configuration is created) - This type of user has the same rights as an Admin but also rights to delete or transfer the ownership of the site configuration.
+
+19. Site comments
+Now, let’s move on to the Comments page, where we can manage and moderate comments. This page is visible to the site owner, admins and moderators.
+
+The upper part of the page presents a filtering area. 
+
+There are several options for filtering the comments:
+You can click one of the comment status filter buttons to search for comments with a specific status. Possible comment statuses are:
+Pending- Pending comments are not visible on the website until they are approved by a moderator. 
+Approved comments are visible by anyone who visits the site. They were reviewed and approved by a moderator.
+Rejected and Deleted comments are not visible because they were rejected by a moderator or deleted.
+
+You can also filter the comment by content, user or page title.
+
+Let’s demonstrate this to display all comments added by Paul. 
+
+or we can filter comments by page title, in our case, Changing the oil.
+
+
+Now, let’s see how easy is to moderate comments. To do this, press the Pending filter.
+
+We see the comment added by John. He advice us to recycle the oil. 
+
+In the upper part of the comment section, we can see the title of the web page where the comment was added. If I click it, the web page will be open in a new tab.
+
+We agree with John, so we approve it’s comment and reply to it.
+Thank you John, I will add a step about this.
+
+Another John’s request is to add a related link to the Oil concept. 
+
+I find this a good idea and approve the comment. I will reply to John:
+Thank you for your suggestion!
+
+The last comment that needs our attention is posted Billy. He said:
+Check out my website! I have everything you need.
+I don’t consider this comment useful for our community. Thus, I will reject it and reply to Billy
+Does not belong here!
+
+He have finished comment moderation. We can notice that John has many useful posts. He seems to be a trusted user that does not require post moderation. 
+Feedback application allows us to promote a user as trusted. 
+
+To to this, go to Community page and change the John’s role to Trusted. Application notify us that 
+Changing the role to trusted means that all the user’s existing pending comments, as well as future comments, will automatically be approved.
+
+19. Integrate user feedback
+So far we have seen how easy is to use Oxygen Feedback commenting system to register and manage user’s feedback.
+
+Now, let’s move forward to the next part from presentation and see how to update documentation content by integrating the user feedback into Oxygen.
+
+20. Integrate feedback in oxygen
+
+So, I’ll switch back to the Oxygen XML Editor.
+
+To integrate the comments into Oxygen, it requires an additional Oxygen plugin that I have already installed. 
+
+Please note that this plugin is under development, it will be released very soon. So please, be kind with it.
+
+First, we’ll configure the Oxygen Feedback Plugin from the application preferences page. Open preferences page and search for feedback
+
+In this page, the first thing is to specify the URL to the Oxygen Feedback platform and login. The login is performed in the Browser. You have to authorize the oxygen application to access data associated with your account.
+
+After we are logged in, we have to register a mapping between the documentation source and where it is published. Press new button. 
+The Site Base URL specifies the URL of your website. The application proposes the URLs of sited defined by you.
+
+Next, we have to specify the source location, the location of the DITA Map I use for editing. 
+I will browse for the DITA map location, and after I click OK, the mapping is configured.
+
+Now we can close the preferences dialog. 
+
+The users comments are now displayed in the Oxygen Feedback view. Let's open the view to see them.
+
+This view displays the user’s comments associated with current edited topic.
+
+For each comment, the view displays the user who posted the comment, the date,
+the comment state, the initial of the site name.
+
+Now, let’s integrate feedback from our users:
+
+John advised us to tell our users that oil should be recycled because it is extremely pollutant. 
+
+So I will add a new step to:
+Recycle the oil and oil filter.
+
+Also, John asked us to add a related link to "Oil" topic. Let’s add it.
+
+In the same manner we can analyze and update our documentation source content to integrate all user feedback. 
+But, for our audience to really see these changes we need to regenerate the online documentation.
+
+21. Regenerate online documentation
+So, let’s move forward to the last part of the presentation when we’ll regenerate the online documentation content.
+
+We can simply generate the online documentation as we do in the beginning of the presentation. 
+
+But, in this case, all user’s comments will be preserved and most of them are outdated because we changed the documentation.
+
+To fix this, for the cases when you significantly change the documentation, we can choose to increase the version of documentation. 
+
+Also, we have to increase it’s version on the Oxygen Feedback platform.
+
+22. New version
+
+So let’s create a new version for the Garage site configuration on the Oxygen Feedback platform.
+
+Select the Garage Site, click Settings button, and select the Site Versions page. 
+
+This page can be used to add or edit versions for a site configuration.
+
+In our case, I want to create a new version. To do that, click the Add Version button.
+
+In the version field, I’ll type 2.0. 
+For the website URL, we’ll use the http://localhost/feedback/v2/garage
+
+Click continue to get the installation instructions. 
+
+In our case, we use Oxygen XML editor for publishing option again.
+
+I will duplicate my Garage transformation scenario and change its name to Garage v2.
+
+In the feedback tab, I will copy the installation fragment. Click Ok to save changes and Apply associated to start publishing process.
+
+And now you can see that a new version is published with the updated content and those outdated comments are no longer visible.
+
+23. Conclusion
+In conclusion:
+
+We have seen how to use Oxygen XML Editor and Oxygen Feedback to continuously improve online documentation by integrating our community feedback.
+
+We have used Oxygen XML Editor to generate online documentation in WebHelp Responsive format.
+
+Then, we used Oxygen Feedback commenting platform to get feedback from website audience and to manage this feedback.
+
+Finally, we used Oxygen XML Editor to integrate users feedback by changing documentation source content and to generate an updated version of the documentation.
+
+
+
