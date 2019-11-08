@@ -4,28 +4,7 @@ To demonstrate this, we’ll use a simple documentation sample written in DITA a
 Oxygen XML Editor to edit documentation sources and to publish it 
 and Oxygen Feedback to get feedback from our community.
 
-2. What is Oxygen Editor
-
-A few words about Oxygen XML Editor.
-
-Oxygen XML Editor is the complete XML editing solution, both for XML developers and content authors. 
-It includes built-in support for all the popular publishing frameworks.
-
-It has been in development for more than 20 years, so it has has a lot of powerful features.
-
-Today, I will show you a small set of features related to DITA authoring and publishing.
-
-2. What is Oxygen Feedback
-
-It is a modern comment management platform that provides a simple and efficient way for your community to interact and offer feedback.
-
- it is very easy to configure and integrate.
-
-You can moderate new comments, that means new comments should be approved or rejected by a moderator until they become visible to your community.
-
-Another powerful feature is to associate a version with community comments and choose if comments from previous versions are visible in newer versions.
-
-This strategy is useful when publishing technical documentation for a product that has multiple versions in production.
+I will give you more details about Oxygen XML Editor and Oxygen Feedback products later in my presentation.
 
 3. Agenda:
 Presentation agenda is:
@@ -58,7 +37,15 @@ We'll use the editing part when we'll integrate user's feedback.
 To generate online documentation for this sample project, I will open the transformation scenario 
 dialog and select the pre-configured “Garage” transformation scenario and click transform.
 
-While transforming, let me give you more information about the DITA framework:
+While transforming, let me give you more information about the Oxygen XML Editor:
+2. What is Oxygen Editor
+
+Oxygen XML Editor is the complete XML editing solution, both for XML developers and content authors. 
+It includes built-in support for all the popular publishing frameworks.
+
+It has been in development for more than 20 years, so it has has a lot of powerful features.
+
+Today, I will show you a small set of features related to DITA authoring and publishing.
 
 DITA is an XML-based open standard for structuring, managing, and publishing content. 
 It has a very good adoption rate in the technical documentation world.
@@ -103,8 +90,6 @@ When you log in to the administration interface, you start with the Sites page.
 
 This is where you can add site configurations and manage existing ones. 
 
-Each site configuration is displayed as a tile. Each tile displays the logo, name, and description for the particular site configuration. 
-
 10. Create a site
 -------
 To create a new site configuration, click the Add site button. 
@@ -122,27 +107,29 @@ The description for my sample project is:
 A documentation project with useful topics regarding car maintenance.
 
 Regarding comments Moderation we have two options:
-All - Select this option if you want all comments to require approval by an Owner, Admin, or Moderator before they are posted for all users to see. 
-When you use this option, each Owner, Admin, and Moderator for the site configuration will receive an email when a 
-user adds a comment notifying them that there is a comment waiting for approval. 
+All - Select this option if you want all comments to require approval by a moderator before they are visible for all users. 
+When you use this option, each moderator will receive an email notifying them that there is a comment waiting for approval.
 This is the option I will use for my presentation.
+
 None - Select this option if you want all comments to be automatically approved and posted for all users to see. 
+
 The last option is: Allow Anonymous Users
-Select this option if you want to allow comments to be posted anonymously without requiring the user to log in.
+Select this option if you want to allow comments to be posted without requiring the user to log in.
 
 11. Initial version
 -----------
-The second page of the site creation wizard is the Initial Version page.
- 
-This wizard page includes the following options:
+The second page of the wizard is the Initial Version page. This page includes the following options:
+
 Initial Version
 Each site configuration can have multiple versions. This is useful if you plan 
-to have multiple versions of the output (for example when publishing technical documentation for a product 
-that has multiple versions in production). This Initial Version option specifies the starting version. 
+to have multiple versions of the output, for example when publishing technical documentation for a product 
+that has multiple versions in production. 
+
 In most cases (especially if you do not plan to have multiple versions), you can leave the initial version as 1.0 as I will do.
 
 Site Base URL(s) 
-Use this option to specify the Base URL for your website (you can add additional URLs by clicking the Add button). This option is very important because comments component will only appear on pages within the hierarchy of this base URL.
+Use this option to specify the Base URL for your website. 
+This option is very important because comments will only appear on pages within the hierarchy of this base URL.
 
 In our case we'll specify the URL where we publish our documentation.
 
@@ -167,8 +154,23 @@ I will put a browser window and Oxygen side by side to make it easy to follow th
 Open the transformation scenario dialog, edit the scenario used to generate documentation. In the Feedback tab, paste the installation fragment. Save and regenerate the documentation.
 
 While the documentation is generated, I will switch to the Feedback platform to finish the site creation procedure.
+The newly created site configuration will be displayed as a tile in Sites page. 
+Notice that the site’s logo, name and description are displayed on tile.
 
-The newly created site configuration will be displayed as a tile in Sites page. Notice that the site’s logo, name and description are displayed on tile.
+The transformation is not ready, let me give you more details about Oxygen Feedback
+2. What is Oxygen Feedback
+
+It is a modern comment management platform that provides a simple and efficient way for your community to interact and offer feedback.
+
+it is very easy to configure and integrate.
+
+You can moderate new comments, that means new comments should be approved or rejected by a moderator until they become visible to your community.
+
+Another powerful feature is to associate a version with community comments and choose if comments from previous versions are visible in newer versions.
+
+This strategy is useful when publishing technical documentation for a product that has multiple versions in production.
+
+This products is in demo version for the moment, it has been released a few days ago.
 
 13. Explore documentation
 ---------
@@ -235,7 +237,8 @@ So, I’ll open the Oxygen Feedback main page and login using a Facebook account
 
 When you log in to the administration interface, again you start with the Sites page.
 
-We already saw that each site configuration is displayed as a tile.
+There are displayed all your sites configurations. Each site configuration is displayed as a tile. Each tile displays the logo, name, and description for the particular site configuration. 
+
 
 In my case, I want to administrate the Garage site. So, I’ll click the Garage tile.
 
