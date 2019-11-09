@@ -1,0 +1,30 @@
+Clean instructions:
+
+1. Gogin with google and delete site.
+
+2. Login with admin@fgarage.com 
+3 .delete Garage site
+4 . create site 
+garage, 
+description A documentation project with useful topics regarding car maintenance.
+http://localhost/garage-v1/
+regenerate documentation for garage-v1
+
+
+2. Login with billy@fgarage.com 
+3  add to washing the car: My site is better!
+* chaning the oil: Check out my website! I have everything you need!
+
+2. Login with marry@fgarage.com 
+* chaning the oil: In step 8, I think you meant to write "Top off" instead of "Top up".
+
+
+2. Login with john@fgarage.com 
+* chaning the oil: 
+We should warn the readers that over tightening the filter will damage the filter's gasket.
+
+I see that there are related links for the "Windshield washer fluid".
+Perhaps there should also be a related link to a page that describes the Oil.
+
+Oil is extremely pollutant so it is highly advisable to recycle it.
+
