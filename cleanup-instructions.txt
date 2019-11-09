@@ -24,7 +24,10 @@ regenerate documentation for garage-v1
 We should warn the readers that over tightening the filter will damage the filter's gasket.
 
 I see that there are related links for the "Windshield washer fluid".
-Perhaps there should also be a related link to a page that describes the Oil.
+Perhaps there should also be a related link to a page that describes the [Oil][1].
 
-Oil is extremely pollutant so it is highly advisable to recycle it.
+
+  [1]: http://localhost/garage-v1/concepts/oil.html
+
+Oil is **extremely pollutant** so it is highly advisable to recycle it.
 

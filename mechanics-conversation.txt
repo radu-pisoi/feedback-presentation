@@ -1,9 +1,13 @@
 Names of actors
 ---------------
 John = user to change to Trusted
+john@fgarage.com
 Mary = Member
+mary@fgarage.com
 Billy = user to change to Banned
+billy@fgarage.com
 Admin = owner
+admin@fgarage.com
 Moderator = moderator
 
 Topic: "Changing the oil in your car"
