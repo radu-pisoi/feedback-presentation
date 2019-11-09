@@ -1,14 +1,13 @@
 19. Integrate user feedback
 So far we have seen how easy is to use Oxygen Feedback commenting system to register and manage user’s feedback.
 
-Now, let’s move forward to the next part of the presentation and see 
-how to update documentation content by integrating the user feedback into Oxygen.
+Now, let’s see how to update documentation sources by integrating the user's feedback into Oxygen.
 
 20. Integrate feedback in oxygen
 
 So, I’ll switch back to the Oxygen XML Editor.
 
-To integrate the comments into Oxygen, it requires an additional Oxygen plugin that I have already installed. 
+To communicate with Feedback server, oxygen requires an additional plugin that I have already installed. 
 
 Please note that this plugin is under development, it will be released soon.
 
@@ -24,7 +23,8 @@ and where it is published. Press new button.
 The Site Base URL specifies the URL of your website. The application proposes the URLs of sited defined by you.
 
 Next, we have to specify the source location, the location of the DITA Map I use for editing. 
-I will browse for the DITA map location, and after I click OK, the mapping is configured.
+
+At this point, the Oxygen feedback plugin is configured and we can close the preferences dialog.
 
 Now we can close the preferences dialog. 
 
@@ -43,13 +43,10 @@ So I will add a new step to:
 Recycle the oil and oil filter.
 
 Also, John asked us to add a related link to "Oil" topic. Let’s add it.
-
-In the same manner we can analyze and update our documentation source content to integrate all user feedback. 
-But, for our audience to really see these changes we need to regenerate the online documentation.
+At this point, we can consider that we have integrated our users feedback.
 
 21. Regenerate online documentation
-So, let’s move forward to the last part of the presentation 
-when we’ll regenerate the online documentation content.
+The next step is to regenerate our documentation, so all users we'll see these changes.
 
 We can simply generate the online documentation as we do in the beginning of the presentation. 
 
@@ -58,7 +55,6 @@ because we changed the documentation.
 
 To fix this, for the cases when you significantly change the documentation, 
 we can choose to increase the version of documentation. 
-Also, we have to increase it’s version on the Oxygen Feedback platform.
 
 22. New version
 
@@ -82,6 +78,14 @@ I will duplicate my Garage transformation scenario and change its name to Garage
 In the feedback tab, I will copy the installation fragment. 
 Click Ok to save changes and Apply associated to start publishing process.
 
+While transformation is in progress, let me show you the Oxygen Feedback website.
+So, open in a browser the oxygenxml.com and select Oxygen Feedback product.
+
+There you can read more about this product.
+You also can test it without intalling it. 
+Also, you can browse the product documentation.
+
+
 And now you can see that a new version is published with the updated content 
 and those outdated comments are no longer visible.
 
@@ -91,9 +95,9 @@ In conclusion:
 We have seen how to use Oxygen XML Editor and Oxygen Feedback to continuously 
 improve online documentation by integrating our community feedback.
 
-We have used Oxygen XML Editor to generate online documentation in WebHelp Responsive format.
+We have used Oxygen XML Editor to generate online documentation.
 
-Then, we used Oxygen Feedback commenting platform to get feedback from website audience and to manage this feedback.
+Then, we used Oxygen Feedback commenting platform to add comments and manage them.
 
 Finally, we used Oxygen XML Editor to integrate users feedback by changing 
 documentation source content and to generate an updated version of the documentation.
