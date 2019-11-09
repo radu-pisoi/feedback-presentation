@@ -1,0 +1,179 @@
+Today, I will show you how to improve online documentation content by getting feedback from your website audience.
+
+To demonstrate this, we’ll use a simple documentation sample written in DITA and two applications that are tightly interconnected:
+Oxygen XML Editor to edit documentation sources and to publish it 
+and Oxygen Feedback to get feedback from our community.
+
+I will give you more details about Oxygen XML Editor and Oxygen Feedback products later in my presentation.
+
+3. Agenda:
+Presentation agenda is:
+1. First, we’ll see how to generate online documentation using Oxygen XML Editor tool
+2. Then, I will embed Oxygen Feedback commenting system in the online documentation
+
+3. Next, we’ll use feedback commenting system to add some comments and replies.
+
+4. After that, we’ll use the Feedback Admin application to manage community comments and users (we’ll moderate some posts, search for comments by using different search criteria)
+
+5. Next, we’ll use Oxygen XML editor to update the documentation source content analyzing community feedback.
+
+6. And, to conclude our presentation, we’ll regenerate online documentation after addressing community feedback.
+
+4. Generate Online documentation
+-----
+First, we’ll see how to use Oxygen XML Editor to generate online documentation for a DITA documentation project.
+
+5. Generate with Oxygen
+------------
+
+Let's switch to the application and quickly explore the DITA sample project that I will use in my presentation.
+
+It’s a sample project for managing or administrating a garage. It contains topics explaining how to maintain a car like: 
+changing the oil or washing the car.
+
+Let's open a topic to see how it looks. Oxygen XML Editor has a very good support for editing DITA files in a visual manner. 
+We'll use the editing part when we'll integrate user's feedback.
+
+To generate online documentation for this sample project, I will open the transformation scenario 
+dialog and select the pre-configured “Garage” transformation scenario and click transform.
+
+While transforming, let me give you more information about the Oxygen XML Editor:
+2. What is Oxygen Editor
+
+Oxygen XML Editor is the complete XML editing solution, both for XML developers and content authors. 
+It includes built-in support for all the popular publishing frameworks.
+
+It has been in development for more than 20 years, so it has has a lot of powerful features.
+
+Today, I will show you a small set of features related to DITA authoring and publishing.
+
+DITA is an XML-based open standard for structuring, managing, and publishing content. 
+It has a very good adoption rate in the technical documentation world.
+
+I see that the transformation is ready and we can quickly explore it to see how it looks…
+
+The main page presents a Table of Contents with topics from first two levels.
+In the upper part we have the publication logo and menu. We can open any of the topics, for instance let's open the Changing the oil topic.
+
+6. Install Oxygen Feedback
+----------
+We saw how to use Oxygen XML Editor to generate online documentation for a DITA project. 
+
+Now, let’s see how easy is to install Oxygen Feedback commenting system in online documentation.
+
+7. Install Oxygen Feedback
+----------
+Oxygen Feedback was designed to be very easy to install. Basically, this can be done in 3 steps:
+
+1. Login to the Oxygen Feedback platform
+
+2. Create a site configuration, mainly it specifies the URL where your documentation is hosted. At the end of this step you will get installation instructions
+
+3. Follow the installation instructions and regenerate documentation
+
+8. Login
+----------
+[This step is in browser]
+Now, let’s see the installation process. 
+
+In a browser, open the feedback.oxygenxml.com. This is the main page for Oxygen feedback platform.
+
+If this is your first time using Oxygen Feedback, you need to sign up for a Feedback account from the Log In page. 
+
+To do this, you can click on Log in with Google or Log in with Facebook to create an account using your Google or Facebook credentials, or click the Sign Up tab to create an account using your name and email address.
+
+In my case, I will login using my Google account
+
+9. Sites page
+-------------
+When you log in to the administration interface, you start with the Sites page. 
+
+This is where you can add site configurations and manage existing ones. 
+
+10. Create a site
+-------
+To create a new site configuration, click the Add site button. 
+
+This will initiate a three-step wizard.
+
+The first page of the site creation wizard is the Settings page. This page includes the following options:
+Name - The name of the site configuration. In my case I will type “Garage”
+The site configuration name is unique per user. Each user cannot have more than one site configuration with the same name.
+
+To add a Logo click anywhere in the circle that contains the camera icon. Browse for an image to use for the logo.
+
+Description
+The description for my sample project is:
+A documentation project with useful topics regarding car maintenance.
+
+Regarding comments Moderation we have two options:
+All - Select this option if you want all comments to require approval by a moderator before they are visible for all users. 
+When you use this option, each moderator will receive an email notifying them that there is a comment waiting for approval.
+This is the option I will use for my presentation.
+
+None - Select this option if you want all comments to be automatically approved and posted for all users to see. 
+
+The last option is: Allow Anonymous Users
+Select this option if you want to allow comments to be posted without requiring the user to log in.
+
+11. Initial version
+-----------
+The second page of the wizard is the Initial Version page. This page includes the following options:
+
+Initial Version
+Each site configuration can have multiple versions. This is useful if you plan 
+to have multiple versions of the output, for example when publishing technical documentation for a product 
+that has multiple versions in production. 
+
+In most cases (especially if you do not plan to have multiple versions), you can leave the initial version as 1.0 as I will do.
+
+Site Base URL(s) 
+Use this option to specify the Base URL for your website. 
+This option is very important because comments will only appear on pages within the hierarchy of this base URL.
+
+In our case we'll specify the URL where we publish our documentation.
+
+12. Install page
+---------
+The third page of the site creation wizard is the Installation page.
+
+There are three options:
+Oxygen XML Editor
+Choose this option if you are adding the Feedback system to WebHelp Responsive documentation using Oxygen XML Editor/Author.
+
+Oxygen XML WebHelp
+This option is for adding the Feedback system to WebHelp Responsive documentation using a command-line script.
+
+Any Platform
+This option is for adding the Feedback system to any website (for example, blog site).
+
+In our case, I will use the first option to install it in WebHelp Responsive documentation using Oxygen.
+
+I will put a browser window and Oxygen side by side to make it easy to follow the installation instructions.
+
+Open the transformation scenario dialog, edit the scenario used to generate documentation. In the Feedback tab, paste the installation fragment. Save and regenerate the documentation.
+
+While the documentation is generated, I will switch to the Feedback platform to finish the site creation procedure.
+The newly created site configuration will be displayed as a tile in Sites page. 
+Notice that the site’s logo, name and description are displayed on tile.
+
+The transformation is not ready, let me give you more details about Oxygen Feedback
+2. What is Oxygen Feedback
+
+It is a modern comment management platform that provides a simple and efficient way for your community to interact and offer feedback.
+
+it is very easy to configure and integrate.
+
+You can moderate new comments, that means new comments should be approved or rejected by a moderator until they become visible to your community.
+
+Another powerful feature is to associate a version with community comments and choose if comments from previous versions are visible in newer versions.
+
+This strategy is useful when publishing technical documentation for a product that has multiple versions in production.
+
+This products is in demo version for the moment, it has been released a few days ago.
+
+13. Explore documentation
+---------
+The documentation was generated, let’s see how looks.
+
+We can see that Oxygen Feedback Comments application was installed in the bottom part of the page. 
