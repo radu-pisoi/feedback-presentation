@@ -1,0 +1,101 @@
+19. Integrate user feedback
+So far we have seen how easy is to use Oxygen Feedback commenting system to register and manage user’s feedback.
+
+Now, let’s move forward to the next part of the presentation and see 
+how to update documentation content by integrating the user feedback into Oxygen.
+
+20. Integrate feedback in oxygen
+
+So, I’ll switch back to the Oxygen XML Editor.
+
+To integrate the comments into Oxygen, it requires an additional Oxygen plugin that I have already installed. 
+
+Please note that this plugin is under development, it will be released soon.
+
+First, we’ll configure the Oxygen Feedback Plugin from the application preferences page. 
+Open preferences page and search for feedback.
+
+In this page, the first thing is to specify the URL to the Oxygen Feedback platform and login. 
+The login is performed in the Browser. You have to authorize the oxygen application 
+to access data associated with your account.
+
+After we are logged in, we have to register a mapping between the documentation source 
+and where it is published. Press new button. 
+The Site Base URL specifies the URL of your website. The application proposes the URLs of sited defined by you.
+
+Next, we have to specify the source location, the location of the DITA Map I use for editing. 
+I will browse for the DITA map location, and after I click OK, the mapping is configured.
+
+Now we can close the preferences dialog. 
+
+The users comments are now displayed in the Oxygen Feedback view. Let's open the view to see them.
+
+This view displays the user’s comments associated with current edited topic.
+
+For each comment, the view displays the user who posted the comment, the date,
+the comment state, the initial of the site name.
+
+Now, let’s integrate feedback from our users:
+
+John advised us to tell our users that oil should be recycled because it is extremely pollutant. 
+
+So I will add a new step to:
+Recycle the oil and oil filter.
+
+Also, John asked us to add a related link to "Oil" topic. Let’s add it.
+
+In the same manner we can analyze and update our documentation source content to integrate all user feedback. 
+But, for our audience to really see these changes we need to regenerate the online documentation.
+
+21. Regenerate online documentation
+So, let’s move forward to the last part of the presentation 
+when we’ll regenerate the online documentation content.
+
+We can simply generate the online documentation as we do in the beginning of the presentation. 
+
+But, in this case, all user’s comments will be preserved and most of them are outdated 
+because we changed the documentation.
+
+To fix this, for the cases when you significantly change the documentation, 
+we can choose to increase the version of documentation. 
+Also, we have to increase it’s version on the Oxygen Feedback platform.
+
+22. New version
+
+So let’s create a new version for the Garage site configuration on the Oxygen Feedback platform.
+
+Select the Garage Site, click Settings button, and select the Site Versions page. 
+
+This page can be used to add or edit versions for a site configuration.
+
+In our case, I want to create a new version. To do that, click the Add Version button.
+
+In the version field, I’ll type 2.0. 
+For the website URL, we’ll use the http://localhost/feedback/garage-v2
+
+Click continue to get the installation instructions. 
+
+In our case, we use Oxygen XML editor for publishing option again.
+
+I will duplicate my Garage transformation scenario and change its name to Garage v2.
+
+In the feedback tab, I will copy the installation fragment. 
+Click Ok to save changes and Apply associated to start publishing process.
+
+And now you can see that a new version is published with the updated content 
+and those outdated comments are no longer visible.
+
+23. Conclusion
+In conclusion:
+
+We have seen how to use Oxygen XML Editor and Oxygen Feedback to continuously 
+improve online documentation by integrating our community feedback.
+
+We have used Oxygen XML Editor to generate online documentation in WebHelp Responsive format.
+
+Then, we used Oxygen Feedback commenting platform to get feedback from website audience and to manage this feedback.
+
+Finally, we used Oxygen XML Editor to integrate users feedback by changing 
+documentation source content and to generate an updated version of the documentation.
+
+

@@ -1,0 +1,132 @@
+Add and moderate comments.
+
+14. Card add comments with feedback
+-------
+We saw how to install Oxygen Feedback in online documentation.
+
+Now, let’s see how easy is to use the Oxygen Feedback commenting system from the perspective of a community member.
+
+15. Add some comments with Oxygen
+--------------
+I’ll go back to the online documentation and add some comments. 
+In this case, I will login to the platform using a simple member account.
+
+Let’s open the ‘Changing the oil in your car’ topic. 
+This topic explains how to change the oil for a car. 
+The second step explains how to drain the oil but does not say anything about how to recycle it.
+
+We know that car’s oil is extremely pollutant so it is highly advisable to recycle it. 
+So, I want to give this feedback to the documentation administrator by adding a comment.
+
+To add a comment click anywhere in the text box where you see Add a comment.
+
+I will write: Oil is extremely pollutant so it is highly advisable to recycle it.
+
+You can use the various toolbar actions to style your text. 
+Let’s emphasis the extremely pollutant.
+You can also type Markdown syntax in the comment box to style your text. 
+I will use italic style for 'highly advisable'.
+
+You can see the results of the styling in the Preview section.
+Click Add to post the comment.
+
+You can see the state of the added comment is Waiting for approval. 
+This means that comment is not visible for other users until it is approved by a Moderator.
+
+Let’s try to add one more comment. We can see that this page contains a related link to the “windshield washer fluid” concept. 
+We want to ask the site admin to add another related link to the Oil concept. So, I will type:
+
+There is a related link to the “windshield washer fluid”.
+Perhaps, there should also be a link to the Oil concept.
+
+I want to add a link to the Oil concept to help site admin to easy identify it. So I copy the topic address 
+from browser and select the Oil word and click the Hiperlink action. Paste the topic addreess and save. A link to the topic was added.
+
+We can add more comments in the same manner, but I think it is enough to demonstrate how simple is for your community to post new comments.
+
+
+16. Moderate comments card
+------------
+Next, we’ll see how to manage community comments and users.
+
+To speed up my presentation, I will use another Feedback account where I have configured the Garage site with some comments already added.
+
+17. Site community
+---------
+So, I’ll open the Oxygen Feedback main page and login using an admin account for this time.
+
+When you log in to the administration interface, again you start with the Sites page.
+
+There are displayed all your sites configurations. Each site configuration is displayed as a tile. Each tile displays the logo, name, and description for the particular site configuration. 
+
+
+In my case, I want to administrate the Garage site. So, I’ll click the Garage tile.
+
+First, we’ll go to the Community page. This page is where you can see all members/users that make up the site community. 
+
+It displays members of the site management team (Owner, Admin, or Moderator) and any other user who has posted at least a comment for this particular site.
+
+To filter the list or search for a particular user, start typing a name in the text field at the top of the page. Let’s search for John. We see that only users named john are displayed.
+
+You can also filter the list by user role. For instance we can display all users with Member role.
+
+This page is accessible to users with a role of Owner or Admin.
+
+18. Site user roles
+--------------
+The possible user roles are:
+
+Banned - This type of user cannot post comments.
+
+Member - This type of user has rights to post new comments. If the site is moderated, like it is in our case, comments posted by this type of user require approval by a user with a role of Owner, Admin, or Moderator.
+
+Trusted - Comments posted by this type of user are automatically approved.
+
+Moderator - This type of user has rights to moderate comment posts (edit, approve, reject, or delete).
+
+Admin - This type of user has the same rights as a moderator but also rights to configure site settings, versions, team members, and user roles.
+
+Owner (This role is automatically assigned when the site configuration is created) - This type of user has the same rights as an Admin but also rights to delete or transfer the ownership of the site configuration.
+
+19. Site comments
+Now, let’s move on to the Comments page, where we can manage and moderate comments. This page is visible to the site owner, admins and moderators.
+
+The upper part of the page presents a filtering area. 
+
+There are several options for filtering the comments:
+You can click one of the comment status filter buttons to search for comments with a specific status. Possible comment statuses are:
+Pending- Pending comments are not visible on the website until they are approved by a moderator. 
+Approved comments are visible by anyone who visits the site. They were reviewed and approved by a moderator.
+Rejected and Deleted comments are not visible because they were rejected by a moderator or deleted.
+
+You can also filter the comment by content, user or page title.
+
+Let’s demonstrate this to display all comments added by Paul. 
+
+or we can filter comments by page title, in our case, Changing the oil.
+
+
+Now, let’s see how easy is to moderate comments. To do this, press the Pending filter.
+
+We see the comment added by John. He advice us to recycle the oil. 
+
+In the upper part of the comment section, we can see the title of the web page where the comment was added. If I click it, the web page will be open in a new tab.
+
+We agree with John, so we approve it’s comment and reply to it.
+Thank you John, I will add a step about this.
+
+Another John’s request is to add a related link to the Oil concept. 
+
+I find this a good idea and approve the comment. I will reply to John:
+Thank you for your suggestion!
+
+The last comment that needs our attention is posted Billy. He said:
+Check out my website! I have everything you need.
+I don’t consider this comment useful for our community. Thus, I will reject it and reply to Billy
+Does not belong here!
+
+He have finished comment moderation. We can notice that John has many useful posts. He seems to be a trusted user that does not require post moderation. 
+Feedback application allows us to promote a user as trusted. 
+
+To to this, go to Community page and change the John’s role to Trusted. Application notify us that 
+Changing the role to trusted means that all the user’s existing pending comments, as well as future comments, will automatically be approved.
