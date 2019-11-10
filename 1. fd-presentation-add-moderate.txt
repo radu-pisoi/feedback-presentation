@@ -41,14 +41,11 @@ While transforming, let me give you more information about the Oxygen XML Editor
 2. What is Oxygen Editor
 
 Oxygen XML Editor is the complete XML editing solution, both for XML developers and content authors. 
-It includes built-in support for all the popular publishing frameworks.
+It includes built-in support for all the popular publishing frameworks like DITA or Docbook.
 
 It has been in development for more than 20 years, so it has has a lot of powerful features.
 
 Today, I will show you a small set of features related to DITA authoring and publishing.
-
-DITA is an XML-based open standard for structuring, managing, and publishing content. 
-It has a very good adoption rate in the technical documentation world.
 
 I see that the transformation is ready and we can quickly explore it to see how it looks…
 
@@ -125,7 +122,7 @@ Each site configuration can have multiple versions. This is useful if you plan
 to have multiple versions of the output, for example when publishing technical documentation for a product 
 that has multiple versions in production. 
 
-In most cases (especially if you do not plan to have multiple versions), you can leave the initial version as 1.0 as I will do.
+In most cases, you can leave the initial version as 1.0 as I will do.
 
 Site Base URL(s) 
 Use this option to specify the Base URL for your website. 
